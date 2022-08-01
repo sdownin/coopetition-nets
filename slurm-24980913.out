@@ -367,3 +367,152 @@ comp_wt (row)   4207 4207 4207 4207 4207 4207 4207 4207 4207 4207 4207 4207
 comp_wt (col)   4207 4207 4207 4207 4207 4207 4207 4207 4207 4207 4207 4207
 
 All networks are conformable.
+
+Dimensions of the network and covariates after adjustment:
+                 t=2  t=3  t=4  t=5  t=6  t=7  t=8  t=9 t=10 t=11 t=12 t=13
+coop (row)      4207 4207 4207 4207 4207 4207 4207 4207 4207 4207 4207 4207
+coop (col)      4207 4207 4207 4207 4207 4207 4207 4207 4207 4207 4207 4207
+memory (row)    4207 4207 4207 4207 4207 4207 4207 4207 4207 4207 4207 4207
+memory (col)    4207 4207 4207 4207 4207 4207 4207 4207 4207 4207 4207 4207
+timecov1 (row)  4207 4207 4207 4207 4207 4207 4207 4207 4207 4207 4207 4207
+timecov1 (col)  4207 4207 4207 4207 4207 4207 4207 4207 4207 4207 4207 4207
+comp_dist (row) 4207 4207 4207 4207 4207 4207 4207 4207 4207 4207 4207 4207
+comp_dist (col) 4207 4207 4207 4207 4207 4207 4207 4207 4207 4207 4207 4207
+comp_wt (row)   4207 4207 4207 4207 4207 4207 4207 4207 4207 4207 4207 4207
+comp_wt (col)   4207 4207 4207 4207 4207 4207 4207 4207 4207 4207 4207 4207
+
+Starting pseudolikelihood estimation with 500 bootstrapping replications using parallel processing on 16 cores...
+Error in `ergm_Init_abort()`:
+! In term ‘nodecov’ in package ‘ergm’: ‘deg_comp’ is/are not valid nodal attribute(s).
+Backtrace:
+     ▆
+  1. └─btergm::btergm(...)
+  2.   ├─ergm::ergmMPLE(form, control = control.ergm)
+  3.   │ └─ergm::ergm_model(formula, nw, initialfit = as.initialfit, term.options = control$term.options)
+  4.   │   └─base::eval(termCall, formula.env)
+  5.   │     └─base::eval(termCall, formula.env)
+  6.   └─ergm:::InitErgmTerm.nodecov(...)
+  7.     ├─ergm::ergm_get_vattr(a$attr, nw, accept = "numeric", multiple = "matrix")
+  8.     └─ergm:::ergm_get_vattr.character(...)
+  9.       └─ergm::ergm_Init_abort(paste.and(sQuote(missing_attr)), " is/are not valid nodal attribute(s).")
+ 10.         └─rlang::abort(...)
+Execution halted
+
+
+Processing /home/sdr8y/coopetition_networks/R/multiplex_tergm__Technical Olympic USA, Inc.R 
+
+Loading required package: xergm.common
+Loading required package: ergm
+Loading required package: network
+network: Classes for Relational Data
+Version 1.16.0 created on 2019-11-30.
+copyright (c) 2005, Carter T. Butts, University of California-Irvine
+                    Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+                    Martina Morris, University of Washington
+                    Skye Bender-deMoll, University of Washington
+ For citation information, type citation("network").
+ Type help("network-package") to get started.
+
+
+ergm: version 3.10.4, created on 2019-06-10
+Copyright (c) 2019, Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+                    Carter T. Butts, University of California -- Irvine
+                    Steven M. Goodreau, University of Washington
+                    Pavel N. Krivitsky, University of Wollongong
+                    Martina Morris, University of Washington
+                    with contributions from
+                    Li Wang
+                    Kirk Li, University of Washington
+                    Skye Bender-deMoll, University of Washington
+                    Chad Klumb
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("ergm").
+
+NOTE: Versions before 3.6.1 had a bug in the implementation of the bd()
+constriant which distorted the sampled distribution somewhat. In
+addition, Sampson's Monks datasets had mislabeled vertices. See the
+NEWS and the documentation for more details.
+
+NOTE: Some common term arguments pertaining to vertex attribute and
+level selection have changed in 3.10.0. See terms help for more
+details. Use ‘options(ergm.term=list(version="3.9.4"))’ to use old
+behavior.
+
+
+Attaching package: ‘xergm.common’
+
+The following object is masked from ‘package:ergm’:
+
+    gof
+
+Loading required package: ggplot2
+Package:  btergm
+Version:  1.9.4
+Date:     2019-05-12
+Authors:  Philip Leifeld (University of Essex)
+          Skyler J. Cranmer (The Ohio State University)
+          Bruce A. Desmarais (Pennsylvania State University)
+
+
+Attaching package: ‘igraph’
+
+The following objects are masked from ‘package:network’:
+
+    %c%, %s%, add.edges, add.vertices, delete.edges, delete.vertices,
+    get.edge.attribute, get.edges, get.vertex.attribute, is.bipartite,
+    is.directed, list.edge.attributes, list.vertex.attributes,
+    set.edge.attribute, set.vertex.attribute
+
+The following objects are masked from ‘package:stats’:
+
+    decompose, spectrum
+
+The following object is masked from ‘package:base’:
+
+    union
+
+Mean transformed timecov values:
+ t=1 t=2 t=3 t=4 t=5 t=6 t=7 t=8 t=9 t=10 t=11 t=12 t=13
+   1   2   3   4   5   6   7   8   9   10   11   12   13
+
+Initial dimensions of the network and covariates:
+                t=2 t=3 t=4 t=5 t=6 t=7 t=8 t=9 t=10 t=11 t=12 t=13
+coop (row)       26  26  26  26  26  26  26  26   26   26   26   26
+coop (col)       26  26  26  26  26  26  26  26   26   26   26   26
+memory (row)     26  26  26  26  26  26  26  26   26   26   26   26
+memory (col)     26  26  26  26  26  26  26  26   26   26   26   26
+timecov1 (row)   26  26  26  26  26  26  26  26   26   26   26   26
+timecov1 (col)   26  26  26  26  26  26  26  26   26   26   26   26
+comp_dist (row)  26  26  26  26  26  26  26  26   26   26   26   26
+comp_dist (col)  26  26  26  26  26  26  26  26   26   26   26   26
+comp_wt (row)    26  26  26  26  26  26  26  26   26   26   26   26
+comp_wt (col)    26  26  26  26  26  26  26  26   26   26   26   26
+
+All networks are conformable.
+
+Dimensions of the network and covariates after adjustment:
+                t=2 t=3 t=4 t=5 t=6 t=7 t=8 t=9 t=10 t=11 t=12 t=13
+coop (row)       26  26  26  26  26  26  26  26   26   26   26   26
+coop (col)       26  26  26  26  26  26  26  26   26   26   26   26
+memory (row)     26  26  26  26  26  26  26  26   26   26   26   26
+memory (col)     26  26  26  26  26  26  26  26   26   26   26   26
+timecov1 (row)   26  26  26  26  26  26  26  26   26   26   26   26
+timecov1 (col)   26  26  26  26  26  26  26  26   26   26   26   26
+comp_dist (row)  26  26  26  26  26  26  26  26   26   26   26   26
+comp_dist (col)  26  26  26  26  26  26  26  26   26   26   26   26
+comp_wt (row)    26  26  26  26  26  26  26  26   26   26   26   26
+comp_wt (col)    26  26  26  26  26  26  26  26   26   26   26   26
+
+Starting pseudolikelihood estimation with 500 bootstrapping replications using parallel processing on 16 cores...
+Error in ergm.pl(nw, fd, model, verbose = verbose, control = control,  : 
+  NA/NaN/Inf in foreign function call (arg 11)
+Calls: <Anonymous> -> <Anonymous> -> ergm.pl
+In addition: Warning message:
+`set_attrs()` is deprecated as of rlang 0.3.0
+This warning is displayed once per session. 
+Execution halted
+finished batch.
+slurmstepd: error: Exceeded step memory limit at some point.
